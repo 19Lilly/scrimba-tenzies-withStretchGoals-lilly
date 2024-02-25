@@ -164,11 +164,11 @@ export default function App() {
         {tenzies ? 'New Game' : 'Roll'}
       </button>
       <div className='high-score-container'>
-        <p>High score</p>
-        <p className='high-score-text'>
+        <h2>High score</h2>
+        <div className='high-score-text'>
           <p> Moves: {highScore.length === 0 ? '0' : highScore.moves} </p>
           <p> Time:{highScore.length === 0 ? '00:00' : highScoreTime} min </p>
-        </p>
+        </div>
         <button className='clear-localStorage-btn' onClick={clearLocalStorage}>
           Reset score
         </button>
